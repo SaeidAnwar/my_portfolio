@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.36e662d4.css",
+    "main.js": "/my_portfolio/static/js/main.fd336a13.js",
+    "static/media/ascii-art.png": "/my_portfolio/static/media/ascii-art.e6854bef37b780e6f9bb.png",
+    "static/media/ht.jpeg": "/my_portfolio/static/media/ht.2887e92536556998b9e0.jpeg",
+    "static/media/ig.jpeg": "/my_portfolio/static/media/ig.585ad86ea3c786d797cb.jpeg",
+    "static/media/project2.webp": "/my_portfolio/static/media/project2.fc906070e9796abe3650.webp",
+    "static/media/gol.png": "/my_portfolio/static/media/gol.5de5fdf31095fd296278.png",
+    "static/media/project3.webp": "/my_portfolio/static/media/project3.b094b696f75369270c95.webp",
+    "static/media/project1.webp": "/my_portfolio/static/media/project1.f2c54a35bc5d07af37ea.webp",
+    "static/media/urlshortener.jpg": "/my_portfolio/static/media/urlshortener.61d02ec820fe6c85c3ec.jpg",
+    "static/media/stv.jpg": "/my_portfolio/static/media/stv.b62820e41076ea1c4a92.jpg",
+    "static/media/ytf.jpg": "/my_portfolio/static/media/ytf.88eda77450e076277e8b.jpg",
+    "static/media/woman1.png": "/my_portfolio/static/media/woman1.bf207e1501b3e3a89339.png",
+    "static/media/woman2.png": "/my_portfolio/static/media/woman2.1badb7321889e9b9ceaf.png",
+    "static/media/man.png": "/my_portfolio/static/media/man.58008a565ab6f0db4d93.png",
+    "static/media/Example-Cv.pdf": "/my_portfolio/static/media/Example-Cv.e83747cf513e0b21a7f1.pdf",
+    "index.html": "/my_portfolio/index.html",
+    "main.36e662d4.css.map": "/my_portfolio/static/css/main.36e662d4.css.map",
+    "main.fd336a13.js.map": "/my_portfolio/static/js/main.fd336a13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36e662d4.css",
+    "static/js/main.fd336a13.js"
+  ]
+}
