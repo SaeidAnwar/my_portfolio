@@ -1,0 +1,170 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Dependencies
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{lmodern}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0A4D68}
+\definecolor{accentText}{HTML}{088395}
+\definecolor{accentLine}{HTML}{FFC436}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+% Custom Commands
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{10pt}
+    
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{10pt}#1\hfill#2\\
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{4pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+
+  \documentTitle{Md Saeid Anwar}{
+    \href{tel:+918920913799}{\faPhone\ +91 8920913799} \quad
+    \href{mailto:mdsaeid753@gmail.com}{\faEnvelope\ mdsaeid753@gmail.com} \quad
+    \href{https://github.com/saeidanwar}{\faGithub\ github.com/saeidanwar} \quad
+    \href{https://saeidanwar.github.io/my_portfolio/}{\faGlobe\ porfolio}
+  }
+
+  \tinysection{Summary}
+  Results-driven Software Developer with experience in building and maintaining high-performance backend services. Proficient in Java, Spring MVC, and system optimization, with a strong foundation in computer science and a passion for solving complex problems and automating processes.
+
+  \section{Skills}
+  \begin{multicols}{2}
+    \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=75pt]
+      \item[\textbf{Languages:}] C++, Java
+      \item[\textbf{Backend:}] Spring Boot, Spring MVC, Tomcat, Maven
+      \item[\textbf{Databases:}] Redis, SQL
+      \item[\textbf{Tools:}] Git, Docker, Jenkins
+      \item[\textbf{DevOps:}] Bash Scripting, CI/CD, Microservices
+    \end{itemize}
+  \end{multicols}
+
+  \section{Experience}
+  \headingBf{Paytm}{Jun 2025 -- Present}
+  \headingIt{Software Developer}{Noida, India}
+    \begin{resume_list}
+        \item Maintain and enhance a core backend service processing      \textbf{10M+ daily transactions}, acting as the gateway for merchant payment systems.
+        \item Build and optimize high-performance REST APIs using \textbf{Java, Spring MVC, and Tomcat}, reducing average response time by \textbf{35\%}.
+        \item Developed a custom AOP-based debugging tool to trace request paths and data mutations across \textbf{15+ microservices}, reducing debugging time by \textbf{40\%}.
+        \item Reduced system load on high-TPS APIs by \textbf{implementing Redis-based request deduplication}, lowering redundant hits by \textbf{20\%}.
+        \item Automated CI/CD workflows with a Bash-based pipeline mapping \textbf{1000+ JIRA tickets to PRs}, improving release turnaround by \textbf{30\%}.
+    \end{resume_list}
+
+
+  \headingBf{Paytm}{Jan 2025 -- Jun 2025}
+  \headingIt{Software Developer Intern}{Noida, India}
+    \begin{resume_list}
+        \item Contributed to the development lifecycle of 3+ backend microservices using Java, Spring MVC, and Tomcat.
+        \item Applied RESTful principles to design, implement, and test over 5 new API endpoints, handling thousands of daily requests.
+        \item Assisted in resolving over 15 production-level tickets by analyzing logs, debugging code, and identifying root causes in a complex microservice architecture.
+        \item Authored unit tests for new features using JUnit, increasing code coverage in the assigned module by 10%.
+        \item Participated in Agile ceremonies, including daily stand-ups and sprint planning, and documented 2 new API contracts for internal team use.
+    \end{resume_list}
+
+  \section{Education}
+  \headingBf{Delhi Technological University}{2021 -- 2025}
+  \headingIt{B.Tech, Computer Engineering (CGPA: 8.18)}{Delhi, India}
+
+  \section{Projects}
+  \headingBf{AI-Powered Video Generation}{\href{https://github.com/SaeidAnwar/Script-to-Video-Generator}{\faGithub}}
+  \begin{resume_list}
+    \item Utilized Meta AI and Eleven Labs APIs for automated image and text-to-speech generation.
+    \item Integrated OpenCV for creating slideshows and embedding subtitles into video content.
+    \item Leveraged Hugging Face API for background music generation and FFmpeg for final media composition.
+  \end{resume_list}
+
+  \headingBf{YouTube Filtered Live}{\href{https://github.com/wevdebelopers/Youtube_Filter}{\faGithub}}
+  \begin{resume_list}
+    \item Developed a tool for distraction-free YouTube viewing by filtering out recommendations.
+    \item Implemented features for managing playlists and subscriptions to enhance user control.
+  \end{resume_list}
+
+  \section{Achievements}
+  \begin{resume_list}
+    \item \textbf{CodeChef:} 5 Star Coder (Highest Rating: 2016)
+    \item \textbf{Codeforces:} Expert (Highest Rating: 1674)
+    \item \textbf{Competitive Programming:} Secured Global Ranks 78 and 80 in CodeChef Starters competitions.
+  \end{resume_list}
+
+\end{document}
